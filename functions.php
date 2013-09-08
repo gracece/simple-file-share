@@ -43,7 +43,7 @@ function sortFileByDate($dir)
     $finalArray = array();
     for($i=0; $i<count($scanArray);$i++)
     {
-      if($scanArray[$i]!="."&&$scanArray[$i]!="..")
+      if(!is_dir($dir."/".$scanArray[$i])&&$scanArray[$i]!="."&&$scanArray[$i]!="..")
       {
         $finalArray[$scanArray[$i]]=filectime($dir."/".$scanArray[$i]); 
       }

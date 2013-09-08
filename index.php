@@ -70,7 +70,7 @@ require_once('./functions.php');
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span2">
-        <img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&choe=UTF-8&chld=L|1&chl=http://<?php echo $_SERVER['SERVER_NAME']."/".SUB_DIR ?>'>
+        <img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&choe=UTF-8&chld=L|1&chl=http://<?php echo $_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/".SUB_DIR ?>'>
  </div><!--/span-->
 
         <div class="span9" style="">
