@@ -63,9 +63,9 @@ function ListFiles($Spath){
   echo' <table class="table table-striped table-bordered">
     <thead>
     <tr>
-    <th style="text-align:center;">#</th>
+    <th style="text-align:center; width:30px">#</th>
     <th>名称(按上传时间排序)</th>
-    <th style="width:80px;">文件大小</th>
+    <th style="width:80px;" class="hidden-phone">文件大小</th>
     <th style="width:90px;" class="hidden-phone">下载时间</th>
     <th style="width:45px;" class="hidden-phone">操作</th>
     </tr>
@@ -87,9 +87,9 @@ function ListFiles($Spath){
     $index++;
 
     echo '<tr>
-      <td style="text-align:center;width:60px;">'.$index.'</td>
+      <td style="text-align:center;width:30px;">'.$index.'</td>
       <td><a target="_blank" title="点击下载" href=./'.$Spath.'/'.urlencode($element['key']).'>'.$element['key']."</a></td>
-      <td>".$size."MB</td>
+      <td class='hidden-phone'>".$size."MB</td>
       <td class='hidden-phone'>".$downtime_fomat."</td>
       ";
     echo '<td class="hidden-phone">

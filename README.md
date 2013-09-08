@@ -11,7 +11,7 @@ simple-file-share
 ### 使用
 
 clone 代码，将sample.config.php改名为config.php,并在该文件中define想要分享的文件夹，以及别人上传的文件夹。如果index.php不是在网站根目录，而是
-在某个子目录中，请define好SUB_DIR. 上传的文件夹需要有写入权限。
+在某个子目录中，请define好SUB_DIR。上传的文件夹需要有写入权限。另外需要在 php.ini 中将upload_max_filesize和post_max_size设置为合适的大小。
 
 ### TODO
 极度不安全，可上传任意类型的文件到上传文件夹。可通过http服务器设置上传文件夹中的文件不可执行，或者用其他办法。可通过http服务器设置上传文件夹中的文件不可执行，或者用其他办法。

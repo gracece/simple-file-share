@@ -68,7 +68,7 @@
 <div class="span3"></div>
 <div class="span6">
 <form action="./action.php?type=add" method="post" enctype="multipart/form-data">
-<p>有什么想说的:-)</p>
+<p>有什么想说的:-)<small class="pull-right"> 说了也不会帮你保存</small></p>
 <textarea  name="content" style="width:98%" rows="6">SHARE</textarea>
 <input  type="file" name="file1">
 <input type="submit" class="btn btn-primary  pull-right" value="发布！">
