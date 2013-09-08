@@ -1,7 +1,5 @@
 <?php
-define("UPLOAD_DIR","uploads");
-define("SHARE_DIR","f");
-define("SUB_DIR","");
+require_once('./config.php');
 
 
 error_reporting(E_ALL);
@@ -20,11 +18,8 @@ function get_user_ip() {
 function safePost($str)
 {
     $val = !empty($_POST["$str"]) ? $_POST["$str"]:null;
-   // $val = strip_tags($val);
-    // 这个好像太严格了
-    // $val =htmlentities($val);
     $val = htmlentities($val,ENT_QUOTES,"UTF-8");
-   // if(!get_magic_quotes_gpc())
+    if(!get_magic_quotes_gpc())
         $val = addslashes($val);
     return $val;
 }
