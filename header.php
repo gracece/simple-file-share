@@ -11,7 +11,7 @@ require_once('./functions.php');
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="//cdnjs.bootcss.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="//lib.sinaapp.com/js/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -30,7 +30,7 @@ require_once('./functions.php');
         }
       }
     </style>
-    <link href="//cdnjs.bootcss.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="http://lib.sinaapp.com/js/bootstrap/2.3.1/css/bootstrap-responsive.min.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -70,7 +70,7 @@ require_once('./functions.php');
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span2">
-        <img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&choe=UTF-8&chld=L|1&chl=http://<?php echo $_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/".SUB_DIR ?>'>
+        <img src='http://qr.liantu.com/api.php?text=http://<?php echo $_SERVER['SERVER_NAME'].":".$_SERVER['SERVER_PORT']."/".SUB_DIR ?>'>
  </div><!--/span-->
 
         <div class="span9" style="">

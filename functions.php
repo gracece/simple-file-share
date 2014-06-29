@@ -94,7 +94,7 @@ function ListFiles($Spath){
       ";
     echo '<td class="hidden-phone">
         <a href="#" class="btn btn-small url"  data-toggle="tooltip" data-placement="left" data-html="true" title="" data-original-title="
-        <img src=\'https://chart.googleapis.com/chart?cht=qr&amp;chs=300x300&amp;choe=UTF-8&amp;chld=L|1&amp;chl=http://'.$_SERVER['SERVER_NAME'].'/'.SUB_DIR.'/'.$longPath.'\'>
+        <img src=\'http://qr.liantu.com/api.php?text=http://'.$_SERVER['SERVER_NAME'].'/'.SUB_DIR.'/'.$longPath.'\'>
         ">QR</a>
         </td></tr>';
   }
